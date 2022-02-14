@@ -3,6 +3,6 @@
     "http-server": "^14.1.0"
   },
   "scripts": {
-    "serve": "./node_modules/.bin/http-server"
+    "serve": "./node_modules/.bin/http-server --cors"
   }
 }
