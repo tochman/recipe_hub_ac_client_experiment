@@ -76,7 +76,7 @@ You can also issue the following command from your browser's console:
 Application.connection.send({ message: "This is the client speaking..." })
 ```
 
-Yoy should again see the message appear on the page. 
+You should again see the message appear on the page. 
 
 ### Extra
 
