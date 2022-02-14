@@ -35,13 +35,26 @@ Application.connection = Application.cable.subscriptions.create(
 
 function addToDOM(data) {
   const div = document.createElement("div");
+  Object.assign(div.style, {
+    background: "#fff",
+    borderRadius: "5px",
+    boxShadow: "0 0 10px rgba(0,0,0,0.2)",
+    color: "#000",
+    fontSize: "16px",
+    margin: "10px",
+    padding: "10px",
+    position: "fixed",
+    right: "10px",
+    top: "10px",
+    zIndex: "9999",
+    display: "none",
+  });
   div.innerHTML = data.message;
-  div.style.display = "none";
   document.body.appendChild(div);
   fadeIn(div);
-  setTimeout(() => {
-    fadeOut(div);
-  }, 3000);
+//   setTimeout(() => {
+//     fadeOut(div);
+//   }, 3000);
 }
 
 function fadeOut(el) {
