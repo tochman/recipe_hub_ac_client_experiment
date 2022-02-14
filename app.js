@@ -52,9 +52,9 @@ function addToDOM(data) {
   div.innerHTML = data.message;
   document.body.appendChild(div);
   fadeIn(div);
-//   setTimeout(() => {
-//     fadeOut(div);
-//   }, 3000);
+  setTimeout(() => {
+    fadeOut(div);
+  }, 3000);
 }
 
 function fadeOut(el) {
